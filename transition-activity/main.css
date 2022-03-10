@@ -8,9 +8,11 @@ body  {
 .caption {
   width: 80%;
   margin: auto;
+  position: relative;
   overflow: hidden;
+  transform: translateZ(0);
 }
-.overCaption-img {
+.caption-img {
   display: block;
   min-width: 100%;
   max-width: 100%;
@@ -22,22 +24,23 @@ body  {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1px;
+  padding: 10px;
   color: #ffffff;
-  transform: rotateY(100%);
+  transform: translateY(100%);
   transition: transform .5s ease-out;
 }
 .caption:hover .overCaption {
-  transform: translateY(0);
+  transform: translateY(10%);
 }
 .overCaption-h1 {
+  text-align: left;
   margin: 0;
   padding: 0 0 15px;
   transform: translate(calc(-100% - 10px));
-  transition: transform .5s ease-out;
+  transition: transform .45s ease-out;
 }
 .caption:hover .overCaption-h1 {
-  transform: translateY(0);
+  transform: translateY(10%);
 }
 .caption::before {
   content: ' ';
@@ -50,11 +53,11 @@ body  {
   transition: background .5s ease-out;
 }
 .caption:hover::before {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 img {
-  width: 80%;
+  width: 100%;
 }
 /* Button stuff */
 button {
