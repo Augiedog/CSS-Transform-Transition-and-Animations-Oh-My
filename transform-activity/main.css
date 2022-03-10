@@ -12,7 +12,7 @@ main {
   align-items: center;
 }
 
-main > div {
+main div {
   width: 40%;
   margin: auto;
   padding: 10%;
